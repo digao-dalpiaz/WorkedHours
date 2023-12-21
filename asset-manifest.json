@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.js": "/WorkedHours/static/js/main.1c85832f.js",
+    "main.js": "/WorkedHours/static/js/main.91136ee7.js",
     "index.html": "/WorkedHours/index.html",
-    "main.1c85832f.js.map": "/WorkedHours/static/js/main.1c85832f.js.map"
+    "main.91136ee7.js.map": "/WorkedHours/static/js/main.91136ee7.js.map"
   },
   "entrypoints": [
-    "static/js/main.1c85832f.js"
+    "static/js/main.91136ee7.js"
   ]
 }
