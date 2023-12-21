@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Button, Card, Col, Container, Row } from "react-bootstrap";
 import Moment from "moment";
 import { useLocation } from "react-router-dom";
+import { VERSION } from "./defs";
 
 export default function Calc() {
 
@@ -16,7 +17,11 @@ export default function Calc() {
 
   return (
     <Container>
-      <h1>Worked Hours Calc</h1>
+      <Row>
+        <Col><h1>Worked Hours Calc</h1></Col>
+        <Col md="3" className="text-end">Version {VERSION}</Col>
+      </Row>
+
       <br />
 
       <Card>
