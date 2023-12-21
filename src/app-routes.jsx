@@ -4,7 +4,7 @@ import Calc from "./calc";
 export default function AppRoutes() {
 
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
       <Routes>
         <Route path="/" element={<Calc />} />
       </Routes>
