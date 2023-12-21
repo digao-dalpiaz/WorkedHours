@@ -1,18 +1,12 @@
 name: React App Deployment # name of the workflo
 
 on:
-  #push:
-  #  branches:
-  #    - deploy-react-app # branch name
-
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
 jobs:
   deploy-react-to-gh-pages:
     runs-on: ubuntu-latest
-    # env:
-    #  EXAMPLE: example # environment variable
 
     steps:
       # checkout the repository content to github runner
@@ -22,15 +16,13 @@ jobs:
       # setup nodejs environment
       - name: Setup Node.js environment
         uses: actions/setup-node@v4.0.1
-        #with:
-       #   node-version: "18.16.1"
 
       # cache the dependencies to speed up the build
       - name: Cache dependencies
         uses: actions/cache@v3.3.2
         with:
           path: ~/.npm
-          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package.json') }}
           restore-keys: |
             ${{ runner.os }}-node-
 
